@@ -49,6 +49,7 @@ function force_enqueue_block_editor_assets() {
 	if ( $pagenow !== 'site-editor.php' ) {
 		return;
 	}
+	// Force registration of block editor assets early so .
 
 	do_action( 'enqueue_block_editor_assets' );
 }
